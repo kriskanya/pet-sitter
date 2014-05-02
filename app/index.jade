@@ -2,15 +2,35 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Pet Sitter
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+    header
+      h1 Pet Sitter
+
+    #controls
+      select#gender
+        option Male
+        option Female
+      select#species
+        option(value='cat.jpg') Cat
+        option(value='dog.jpg') Dog
+        option(value='sloth.jpg') Sloth
+        option(value='dragon.jpg') Dragon
+        option(value='richmond.jpg') Richmond
+      input#name(type='text' placeholder='Name')
+      input#age(type='text' placeholder='Age')
+      button#add Add Pet
+
+    #pets
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
-    script(src='./js/es5/main.js')
+    script(src='./js/es6/database.js')
+    script(src='./js/es6/Pet.js')
     script(src='./js/es6/main.js')
+    //- script(src="http://code.jquery.com/jquery-1.10.1.min.js")
+    //- script(src="js/buttons.js")
